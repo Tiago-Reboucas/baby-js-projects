@@ -1,10 +1,18 @@
 body{
-  background: gray;
+  background: url("img/bg.jpg") no-repeat center;
+  background-color: rgb(138, 228, 138);
 }
 
 h1, .container, body p{
   margin: auto;
   text-align: center;
+}
+
+h1 {
+  background-color: rgb(138, 228, 138);
+  width: 200px;
+  opacity: 80%;
+  border-radius: 5px;
 }
 
 .container{
@@ -14,12 +22,12 @@ h1, .container, body p{
   margin: 30px auto;
   padding: 15px;
   width: 300px;
-  height: 150px;
+  height: 200px;
   border: 3px solid rgb(21, 21, 21);
   border-radius: 5%;
 }
 
-.counter{
+.counterUp{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,14 +42,56 @@ button{
   border-radius: 50%;
   font-size: 25px;
   color: black;
+  background: transparent no-repeat center;
+  background-size: 115% 115%;
+}
+
+button[name="decrement"]{
+  background-image: url("img/red_button.jfif");
+}
+
+button[name="increment"]{
+  background-image: url("img/green_button.jfif");
+}
+
+button[name="reset"]{
+  background-image: url("img/big_red_button.png");
+  background-size: 100% 100%;
+  border: none;
+  border-radius: 0;
+  width: 100px;
+  font-size: 20px;
+  margin-top: 0;
 }
 
 #currentNumber{
   margin: 15px 25px;
   width: 100px;
+  border-radius: 15px;
   font-size: 25px;
   color: white;
   background: rgb(194, 194, 194);
-  opacity: 50%;
+  opacity: 80%;
+}
+
+input {
+  width: 70px;
+}
+
+label {
+  color: white;
+}
+
+.minMax {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.field1 {
+  display: flex;
+  flex-direction: column;
 }
 

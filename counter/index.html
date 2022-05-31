@@ -10,10 +10,28 @@
 <body>
   <h1>My Counter</h1>
   <div class="container">
-    <div class="counter">
+    <div class="counterUp">
       <button name="decrement" onclick="decrement()">-</button>
       <p id="currentNumber">0</p>
       <button name="increment" onclick="increment()">+</button>
+    </div>
+    <button name="reset" onclick="reset()">Reset</button>
+    <div class="counterDown">
+      <div class="field">
+        <label for="startNumber">Start count</label>
+        <input type="number" id="startNumber">
+      </div>
+      <div class="minMax">
+        <div class="field1">
+          <label for="minNumber">Min</label>
+          <input type="number" id="minNumber">
+        </div>
+        <div class="field1">
+          <label for="maxNumber">Max</label>
+          <input type="number" id="maxNumber">
+        </div>
+      </div>
+      
     </div>
   </div>
   <p>made by T_CAR</p>
